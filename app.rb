@@ -25,9 +25,9 @@ class App < Sinatra::Base
     "#{params[:word1]} #{params[:word2]} #{params[:word3]} #{params[:word4]} #{params[:word5]}."
   end
 
-  get '/:operation/:number1/:number2' do
-    number1 = params[:number1].to_i
-    number2 = params[:number2].to_i
+  get '/:operation/:num1/:num2' do
+    num1 = params[:num1].to_i
+    num2 = params[:num2].to_i
 
     answer = 'Unable to perform this operation'
 
